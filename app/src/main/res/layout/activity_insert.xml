@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InsertActivity">
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40sp"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="Telefone"
+        android:inputType="phone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40sp"
+            android:layout_marginBottom="20sp">
+
+            <TextView
+                android:id="@+id/txtTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo" />
+
+            <RadioButton
+                android:id="@+id/rbCasa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Casa" />
+
+            <RadioButton
+                android:id="@+id/rbApartamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apartamento" />
+
+            <RadioButton
+                android:id="@+id/rbLoja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loja" />
+
+            <RadioButton
+                android:id="@+id/rbNaoSeiTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não Sei" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rgTamanho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40sp"
+            android:layout_marginBottom="20sp">
+
+            <TextView
+                android:id="@+id/txtTamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tamanho" />
+
+            <RadioButton
+                android:id="@+id/rbPequeno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pequeno" />
+
+            <RadioButton
+                android:id="@+id/rbMedio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Médio" />
+
+            <RadioButton
+                android:id="@+id/rbGrande"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grande" />
+
+            <RadioButton
+                android:id="@+id/rbNaoSeiTamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não Sei" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Em construção"
+        android:layout_marginHorizontal="40sp"
+        android:layout_marginBottom="20sp"/>
+
+    <Button
+        android:id="@+id/btnInserir"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Inserir" />
+
+</LinearLayout>
